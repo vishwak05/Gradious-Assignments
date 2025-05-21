@@ -1,0 +1,17 @@
+input 1;
+Hello There! How are you?
+output 1:
+UPPER 3
+LOWER 16
+
+input 2:
+It's SOOOO nice to meet you finally!
+output 2:
+UPPER 6
+LOWER 22
+
+input 3:
+I've heard that you have gotten a new JOB, Congratulations
+output 3:
+UPPER 5
+LOWER 42
