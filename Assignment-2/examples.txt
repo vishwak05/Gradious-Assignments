@@ -1,0 +1,17 @@
+input 1:
+Hello World! 123
+output 1:
+LETTERS 10
+DIGITS 3
+
+input 2:
+Python3 is Fun and Easy to Learn in 2025!
+output 2:
+LETTERS 27
+DIGITS 5
+
+input 3:
+Today is 21-5-2025 Webnesday
+output 3:
+LETTERS 16
+DIGITS 7
