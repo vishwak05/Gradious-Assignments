@@ -1,1 +1,13 @@
+input 1:
+gradious hello world and knowledge is of no value unless you put it to practise and hello world again
+output 1:
+again and gradious hello is it knowledge no of practise put to unless value world you
+
+input 2:
 hello there complete your assignment and place the output there after complete of assignment make sure output is place in same folder
+output 2:
+after and assignment complete folder hello in is make of output place same sure the there your
+
+input 3:
+Hello world a grandiose hello world for knowledge is of no value unless you put it to practice and once more hello world echoing through the chambers of action and intent
+output 3:
