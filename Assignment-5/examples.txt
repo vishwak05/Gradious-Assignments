@@ -1,0 +1,23 @@
+input 1:
+Str0ng@Pa$$99
+output 1;
+Password Strength: Strong
+Password is acceptable: True
+
+input 2:
+Test@123A
+output 2:
+Password Strength: High
+Password is acceptable: True
+
+input 3:
+Ab1@def
+output 3:
+Password Strength: Moderate
+Password is acceptable: False
+
+input 4:
+admin2
+output 4:
+Password Strength: Weak
+Password is acceptable: False
