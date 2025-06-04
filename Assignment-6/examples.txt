@@ -1,0 +1,29 @@
+input 1:
+python assignment-6.py -h --max-depth=1
+output 2:
+3.3M .
+3.2K .\.git
+361.0K .\Assignment-1
+317.4K .\Assignment-2
+302.6K .\Assignment-3
+328.2K .\Assignment-4
+455.0K .\Assignment-5
+1.8K .\Assignment-6
+1.6M .\Zip Folder
+
+input 2:
+python assignment-6.py -h --max-depth=2
+output 2:
+30.4K .\.git
+361.0K .\Assignment-1
+317.4K .\Assignment-2
+302.6K .\Assignment-3
+328.2K .\Assignment-4
+455.0K .\Assignment-5
+1.8K .\Assignment-6
+1.6M .\Zip Folder
+25.2K .\.git\hooks
+240.0B .\.git\info
+1.7K .\.git\logs
+0.0B .\.git\objects
+0.0B .\.git\refs
