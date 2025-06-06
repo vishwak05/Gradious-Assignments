@@ -6,7 +6,7 @@ def evaluate_password(password):
     password_strength, password_acceptable = "Weak", True
 
     # Password is not acceptable if password has incorrect length
-    if not 8 <= len(password) <= 14:
+    if not 8 <= len(password):
         password_acceptable = False
     
     # Password is not acceptable if password has unacceptable words
@@ -36,12 +36,12 @@ def evaluate_password(password):
             special_char += 1
 
     # Password strength is Strong if all (upper, lower, digit, special) have >= 2 frequency
-    if upper >= 2 and lower >= 2 and digits >= 2 and special_char >= 2 and 8 <= len(password) <= 14:
+    if upper >= 2 and lower >= 2 and digits >= 2 and special_char >= 2 and 8 <= len(password):
         password_strength = "Strong"
     
     # Password strength is High if all (upper, lower, digit, special) have >= 1 frequency with anyone of char has >= 2
     elif (upper>=1 and lower>=1 and digits>=1 and special_char>=1 and
-          (upper>=2 or lower>=2 or digits>=2 or special_char>=2)) and 8 <= len(password) <= 14:
+          (upper>=2 or lower>=2 or digits>=2 or special_char>=2)) and 8 <= len(password):
         password_strength = "High"
     
     # Password strength is Moderate if all (upper, lower, digit, special) have >= 1 frequency

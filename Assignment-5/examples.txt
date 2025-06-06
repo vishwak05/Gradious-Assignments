@@ -21,3 +21,9 @@ admin2
 output 4:
 Password Strength: Weak
 Password is acceptable: False
+
+input 5:
+AAAaaa*****989898989988
+output 5:
+Password Strength: Strong
+Password is Acceptable: True
