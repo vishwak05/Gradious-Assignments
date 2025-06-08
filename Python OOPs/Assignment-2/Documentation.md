@@ -1,4 +1,4 @@
-# Abstract Base Classes in Healthcare Software
+# Abstract Base Classes in Healthcare
 
 ## Purpose
 
