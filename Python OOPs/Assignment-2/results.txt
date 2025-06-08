@@ -1,0 +1,16 @@
+Test Case Descriptions and Results
+
+Test 1: Consultation Service
+Description: Schedule a consultation appointment for Sai, record consultation data, and generate a consultation report.
+Expected Result: Appointment is scheduled, data is recorded, and report contains "Consultation Report for Sai".
+Actual Result: Appointment scheduled, data recorded, report generated with correct title. Test case passed.
+
+Test 2: Procedure Service
+Description: Schedule a procedure appointment for Shreya, record procedure data, and generate a procedure report.
+Expected Result: Appointment is scheduled, data is recorded, and report contains "Procedure Report for Shreya".
+Actual Result: Appointment scheduled, data recorded, report generated with correct title. Test case passed.
+
+Test 3: Diagnostic Service
+Description: Schedule a diagnostic appointment for Shaani, record diagnostic data, and generate a diagnosis report.
+Expected Result: Appointment is scheduled, data is recorded, and report contains "Diagnosis Report for Shaani".
+Actual Result: Appointment scheduled, data recorded, report generated with correct title. Test case passed.
