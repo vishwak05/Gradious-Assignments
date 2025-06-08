@@ -1,0 +1,26 @@
+Test Case Descriptions and Results
+
+Test 1: Add Patient Record
+Description: Add three patients (Sai, Shreya, Shaani) to the patient record system.
+Expected Result: All three patients are added successfully.
+Actual Result: All three patients present in records, test case passed.
+
+Test 2: Add Existing Patient
+Description: Attempt to add an existing patient (Sai) again to the records.
+Expected Result: Patient is not added again, method returns None.
+Actual Result: Method returned None, test case passed.
+
+Test 3: Update Patient Medical Info
+Description: Update medical conditions for all three patients.
+Expected Result: Each patient's medical_conditions tuple is updated with new conditions.
+Actual Result: All medical_conditions updated correctly, test case passed.
+
+Test 4: Update Nonexistent Patient
+Description: Attempt to update medical conditions for a patient ID (999) that does not exist.
+Expected Result: Method returns None, no update performed.
+Actual Result: Method returned None, test case passed.
+
+Test 5: Generate Medical Reports
+Description: Generate a report listing all patients in the system.
+Expected Result: Report contains all three patients with correct names.
+Actual Result: Report contains Sai, Shreya, and Shaani, test case passed.
