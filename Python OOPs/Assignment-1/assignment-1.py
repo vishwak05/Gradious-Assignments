@@ -1,3 +1,5 @@
+import unittest
+
 # Implementing a Transaction protocol to perform financial transactions
 
 # Creating a transaction class for defining methods of protocol
@@ -77,7 +79,7 @@ class Transfer_amount(Transaction):
         # Add money to reciever's account
         self.to_acc.balance += self.amount
 
-# Method to run the Unit Tests for all types of Transactions
+# Method to run the Unit Tests for all types of Transactions (Manual method using print statements)
 def run_unit_tests():
     # Sample Accounts
     acc1 = Account("Sai", 20000)
@@ -130,6 +132,47 @@ def run_unit_tests():
     else:
         print("Test 5: Failed")
 
+# Unit Tests for all types of Transactions
+class TestTransactions(unittest.TestCase):
+    def setUp(self):
+        # Sample Accounts
+        self.acc1 = Account("Sai", 20000)
+        self.acc2 = Account("Shreya", 35000)
+        self.acc3 = Account("Shobha", 45000)
+        self.acc4 = Account("Shaani", 5000)
+
+    # Test:1 Deposit amount (Transaction should be successful)
+    def test_deposit(self):
+        d = Deposit(self.acc1, 5000)
+        d.execute()
+        self.assertEqual(self.acc1.balance, 25000)
+
+    # Test 2: Withdraw amount (Transaction should be successful)
+    def test_withdrawal(self):
+        w = Withdraw(self.acc2, 3000)
+        w.execute()
+        self.assertEqual(self.acc2.balance, 32000)
+    
+    # Test 3: Withdraw amount (Transaction should fail due to insufficient funds)
+    def test_withdrawal_fail(self):
+        w = Withdraw(self.acc4, 6000)
+        w.execute()
+        self.assertEqual(self.acc4.balance, 5000)
+
+    # Test 4: Transfer amount (Transaction should be successful)
+    def test_transfer(self):
+        t = Transfer_amount(self.acc1, self.acc3, 1500)
+        t.execute()
+        self.assertEqual(self.acc1.balance, 18500)
+        self.assertEqual(self.acc3.balance, 46500)
+
+    # Test 5: Transfer amount (Transaction should fail due to insufficient funds)
+    def test_transfer_fail(self):
+        t = Transfer_amount(self.acc4, self.acc2, 5500)
+        t.execute()
+        self.assertEqual(self.acc4.balance, 5000)
+        self.assertEqual(self.acc2.balance, 35000)
+
 # Executing the Transactions
 if __name__ == "__main__":
     # Sample Accounts
@@ -150,4 +193,5 @@ if __name__ == "__main__":
         tx.execute()
 
     # Running the unit tests
-    run_unit_tests()
+    print("\nRunning the Unit Tests:")
+    unittest.main()
