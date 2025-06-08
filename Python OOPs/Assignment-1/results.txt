@@ -1,0 +1,26 @@
+Test Case Descriptions and Results
+
+Test 1: Deposit Transaction
+Description: Deposit 5000 into Sai's account (initial balance: 20000)
+Expected Result: Balance should become 25000
+Actual Result: Balance is 25000, test case passed
+
+Test 2: Withdraw Transaction (Successful)
+Description: Withdraw 3000 from Shreya's account (initial balance: 35000)
+Expected Result: Balance should become 32000
+Actual Result: Balance is 32000, test case passed
+
+Test 3: Withdraw Transaction (Insufficient Funds)
+Description: Attempt to withdraw 6000 from Shaani's account (initial balance: 5000)
+Expected Result: Transaction should fail, balance remains 5000
+Actual Result: Balance is 5000, test passed
+
+Test 4: Transfer Transaction (Successful)
+Description: Transfer 1500 from Sai's account (balance: 25000 after deposit) to Shobha's account (initial balance: 45000)
+Expected Result: Sai's balance becomes 23500, Shobha's balance becomes 46500
+Actual Result: Balances are 23500 and 46500 respectively, test case passed
+
+Test 5: Transfer Transaction (Insufficient Funds)
+Description: Attempt to transfer 5500 from Shaani's account (balance: 5000) to Shreya's account (balance: 32000 after withdrawal)
+Expected Result: Transaction should fail, balances remain unchanged (5000 and 32000)
+Actual Result: Balances are 5000 and 32000 respectively, test case passed
