@@ -1,0 +1,10 @@
+Cache miss for a.txt
+11
+Cache miss for b.txt
+16
+Cache hit for a.txt
+11
+Cache miss for c.txt
+29
+Cache miss for d.txt
+23

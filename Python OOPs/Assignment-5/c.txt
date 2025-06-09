@@ -1,0 +1,1 @@
+This process of cache is better than other cache like FIFO First In First out which keeps on adding elements when it arrives LRU is far better than FIFO

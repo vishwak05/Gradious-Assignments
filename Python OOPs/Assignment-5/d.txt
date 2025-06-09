@@ -1,0 +1,1 @@
+Cache hit or miss describes whether the value we are looking for is present in cache and it has been retrieved or not

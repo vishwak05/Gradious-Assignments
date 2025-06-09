@@ -1,0 +1,1 @@
+LRU cache is Least Recently Used Cache which removes the least recently used element from cache
