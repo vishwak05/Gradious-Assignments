@@ -1,0 +1,20 @@
+Results:
+Patient 101 successfully added
+Patient 102 successfully added
+Patient 103 successfully added
+
+Patient 102 successfully removed
+
+Printing Patients:
+patient_id: 101, name: Sai, age: 21
+patient_id: 103, name: Shaani, age: 26
+
+Appointment of 101 is scheduled for 10-06-2025
+Appointment of 102 is scheduled for 12-06-2025
+Appointment of 103 is scheduled for 13-06-2025
+
+Appointment of 102 is cancelled
+
+Printing Appointments:
+appointment_id: 101, name: Sai, age: 21, date: 10-06-2025
+appointment_id: 103, name: Shaani, age: 26, date: 13-06-2025
