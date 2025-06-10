@@ -23,7 +23,7 @@ class Account:
         return f"Account owner: {self.owner}, balance: {self.balance}"
 
 # Deposit Transaction class to add money into account
-class Deposit(Transaction):
+class Deposit():
     def __init__(self, account:Account, amount:float):
         self.account = account  # Account to deposit money into
         self.amount = amount    # Amount of money to deposit
@@ -38,7 +38,7 @@ class Deposit(Transaction):
         self.account.balance += self.amount
 
 # Withdraw Transaction class to remove money from account
-class Withdraw(Transaction):
+class Withdraw():
     def __init__(self, account:Account, amount:float):
         self.account = account  # Account to withdraw money from
         self.amount = amount    # Amount of money to withdraw
@@ -57,7 +57,7 @@ class Withdraw(Transaction):
         self.account.balance -= self.amount
 
 # Transfer funds Transaction class to move money from one account to another account
-class Transfer_amount(Transaction):
+class Transfer_amount():
     def __init__(self, from_acc:Account, to_acc:Account, amount:float):
         self.from_acc = from_acc    # Sender's account
         self.to_acc = to_acc        # Reciever's account
