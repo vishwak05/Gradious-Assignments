@@ -1,0 +1,185 @@
+1. Week-wise Sales based on Customer type
+year, week, order type, total sales
+2020, 16, Overseas, ₹90,000,000
+2021, 5, Wholesale, ₹6,000,000
+2021, 6, Overseas, ₹80,000,000
+2021, 11, Wholesale, ₹200,000
+2021, 14, Wholesale, ₹6,000,000
+2021, 21, Overseas, ₹6,000,000
+2021, 21, Wholesale, ₹600,000
+2021, 23, Overseas, ₹160,000,000
+2021, 25, Overseas, ₹21,000,000
+2021, 25, Retail, ₹400,000
+2021, 29, Overseas, ₹60,000,000
+2021, 29, Wholesale, ₹7,400,000
+2021, 30, Overseas, ₹60,000,000
+2021, 30, Wholesale, ₹5,000,000
+2021, 32, Wholesale, ₹400,000
+2021, 36, Retail, ₹600,000
+2021, 39, Wholesale, ₹3,000,000
+2021, 48, Wholesale, ₹50,000,000
+2022, 5, Overseas, ₹210,000,000
+2022, 5, Retail, ₹4,000,000
+2022, 5, Wholesale, ₹70,000,000
+2022, 7, Retail, ₹200,000
+2022, 9, Overseas, ₹210,000,000
+2022, 9, Retail, ₹4,000,000
+2022, 13, Retail, ₹700,000
+2022, 13, Wholesale, ₹150,000,000
+2022, 14, Overseas, ₹90,200,000
+2022, 14, Retail, ₹3,700,000
+2022, 14, Wholesale, ₹56,000,000
+2022, 15, Overseas, ₹80,000,000
+2022, 16, Overseas, ₹4,000,000
+2022, 16, Retail, ₹1,000,000
+2022, 16, Wholesale, ₹104,000,000
+2022, 17, Overseas, ₹136,000,000
+2022, 17, Retail, ₹3,200,000
+2022, 17, Wholesale, ₹94,000,000
+2022, 18, Retail, ₹20,000
+
+2. Which state/city presents the highest retail market?
+The City with highest retail market is Kochi with ₹4300000
+
+3. Which state/city has the lowest wholesale market?
+The City with lowest wholesale market is Jaipur with ₹400000
+
+4. The date when we did the highest business?
+The Date we did the highest business is 2022-02-02 with ₹214000000
+
+5. List the unique customer and address along with the total order value.
+Customer ID, FullName, Address, City, Total Order Value
+R2001, Sudhanshu Sharma, 12, MG Road, Sector 49, Noida, ₹3000000
+R2002, Kapil Khanna, 12/5, RR Marg, Bandra, Mumbai, ₹60000000
+R2003, Megha Raj, 12, T Nagar, Chennai, ₹200000
+R2004, David John, 24, George Nagar, Hyderabad, ₹200000000
+R2005, William James, 6, Rao Street, Kolkotta, ₹4200000
+R2006, Raj Sharma, 7, EM Road, Pune, ₹10000000
+R2007, Daniel Jacob, 3 c, Ram Marg, Patna, ₹210000000
+R2008, Jardon Jose, 3/5, Church Street, Bangalore, ₹12000000
+R2009, Megha Raj, 12, T Nagar, Kochi, ₹300000
+R2010, David John, 24, George Nagar, Tiruvanandapuram, ₹400000
+R2011, William James, 6, Rao Street, Erode, ₹55000000
+R2012, Raj Sharma, 7, EM Road, Vijayawada, ₹80000000
+R2013, Daniel Jacob, 3 c, Ram Marg, Agra, ₹30000000
+R2014, Sudhanshu Sharma, 12, MG Road, Sector 49, Nagpur, ₹400000
+R2015, Kapil Khanna, 12/5, RR Marg, Bandra, Panipat, ₹90000000
+R2016, Megha Raj, 12, T Nagar, Bhuvaneshwar, ₹5000000
+R2017, Neeraj Gupta, 7 Hills Road, Patna, ₹400000
+R2018, Gulshan Rai, 1901, 7th Avenue, Jaipur, ₹8000000
+R2019, Reema Gupta, 1/14, BB Complex, Shimla, ₹700000
+R2020, Roshan Rai, 12, Pacific Avenue, Kochin, ₹1600000
+R2021, Radhika Sharma, Flat 12, Block 2, Mysore, ₹40000000
+R2022, Neeraj Gupta, 7 Hills Road, Gandhinagar, ₹400000
+R2023, Gulshan Rai, 1901, 7th Avenue, Patna, ₹7000000
+R2024, Reema Gupta, 1/14, BB Complex, Bangalore, ₹80000000
+R2025, Roshan Rai, 12, Pacific Avenue, Kochi, ₹30000000
+R2026, Radhika Sharma, Flat 12, Block 2, Tiruvanandapuram, ₹600000
+R2027, Neeraj Gupta, 7 Hills Road, Erode, ₹2000000
+R2028, Gulshan Rai, 1901, 7th Avenue, Vijayawada, ₹21000000
+R2029, Reema Gupta, 1/14, BB Complex, Agra, ₹400000
+R2030, Roshan Rai, 12, Pacific Avenue, Nagpur, ₹8000000
+R2031, Radhika Sharma, Flat 12, Block 2, Panipat, ₹20000
+R2032, Neeraj Gupta, 7 Hills Road, Bhuvaneshwar, ₹6000000
+R2033, Gulshan Rai, 1901, 7th Avenue, Patna, ₹600000
+R2034, Reema Gupta, 1/14, BB Complex, Jaipur, ₹60000000
+R2035, Roshan Rai, 12, Pacific Avenue, Shimla, ₹400000
+R2036, Radhika Sharma, Flat 12, Block 2, Kochin, ₹60000000
+R2037, Reema Gupta, 1/14, BB Complex, Mysore, ₹160000000
+R2039, Gulshan Rai, 1901, 7th Avenue, Bhuvaneshwar, ₹6000000
+R2040, Reema Gupta, 1/14, BB Complex, Patna, ₹200000
+R2041, Roshan Rai, 12, Pacific Avenue, Jaipur, ₹4000000
+R2042, Radhika Sharma, Flat 12, Block 2, Shimla, ₹400000
+R2043, Neeraj Gupta, 7 Hills Road, Kochin, ₹80000000
+R2044, Gulshan Rai, 1901, 7th Avenue, Mysore, ₹4000000
+R2045, Reema Gupta, 1/14, BB Complex, Gandhinagar, ₹210000000
+R2046, Roshan Rai, 12, Pacific Avenue, Patna, ₹400000
+R2047, Radhika Sharma, Flat 12, Block 2, Bangalore, ₹90000000
+R2048, Reema Gupta, 1/14, BB Complex, Kochi, ₹4000000
+R2049, Sudhanshu Sharma, 12, MG Road, Sector 49, Tiruvanandapuram, ₹60000000
+R2051, Megha Raj, 12, T Nagar, Vijayawada, ₹600000
+R2052, David John, 24, George Nagar, Bhuvaneshwar, ₹60000000
+R2053, William James, 6, Rao Street, Patna, ₹7000000
+R2054, Raj Sharma, 7, EM Road, Jaipur, ₹400000
+R2055, Daniel Jacob, 3 c, Ram Marg, Shimla, ₹3000000
+
+6. Has the business improved week after week?
+Year, Week, Total Sales, Change in Sale
+2020, 16, ₹90000000, ₹None
+2021, 5, ₹6000000, ₹-84000000
+2021, 6, ₹80000000, ₹74000000
+2021, 11, ₹200000, ₹-79800000
+2021, 14, ₹6000000, ₹5800000
+2021, 21, ₹6600000, ₹600000
+2021, 23, ₹160000000, ₹153400000
+2021, 25, ₹21400000, ₹-138600000
+2021, 29, ₹67400000, ₹46000000
+2021, 30, ₹65000000, ₹-2400000
+2021, 32, ₹400000, ₹-64600000
+2021, 36, ₹600000, ₹200000
+2021, 39, ₹3000000, ₹2400000
+2021, 48, ₹50000000, ₹47000000
+2022, 5, ₹284000000, ₹234000000
+2022, 7, ₹200000, ₹-283800000
+2022, 9, ₹214000000, ₹213800000
+2022, 13, ₹150700000, ₹-63300000
+2022, 14, ₹149900000, ₹-800000
+2022, 15, ₹80000000, ₹-69900000
+2022, 16, ₹109000000, ₹29000000
+2022, 17, ₹233200000, ₹124200000
+2022, 18, ₹20000, ₹-233180000
+
+7. Percentage change in business between each week.
+Year, Week, Total Sales, Percentage of Change
+2020, 16, ₹90000000, None%
+2021, 5, ₹6000000, -93.33%
+2021, 6, ₹80000000, 1233.33%
+2021, 11, ₹200000, -99.75%
+2021, 14, ₹6000000, 2900.00%
+2021, 21, ₹6600000, 10.00%
+2021, 23, ₹160000000, 2324.24%
+2021, 25, ₹21400000, -86.63%
+2021, 29, ₹67400000, 214.95%
+2021, 30, ₹65000000, -3.56%
+2021, 32, ₹400000, -99.38%
+2021, 36, ₹600000, 50.00%
+2021, 39, ₹3000000, 400.00%
+2021, 48, ₹50000000, 1566.67%
+2022, 5, ₹284000000, 468.00%
+2022, 7, ₹200000, -99.93%
+2022, 9, ₹214000000, 106900.00%
+2022, 13, ₹150700000, -29.58%
+2022, 14, ₹149900000, -0.53%
+2022, 15, ₹80000000, -46.63%
+2022, 16, ₹109000000, 36.25%
+2022, 17, ₹233200000, 113.94%
+2022, 18, ₹20000, -99.99%
+
+8. Percentage change in retail business between each week.
+Year, Week, Retail Sales, Percentage of Change
+2021, 25, ₹400000, None%
+2021, 36, ₹600000, 50.00%
+2022, 5, ₹4000000, 566.67%
+2022, 7, ₹200000, -95.00%
+2022, 9, ₹4000000, 1900.00%
+2022, 13, ₹700000, -82.50%
+2022, 14, ₹3700000, 428.57%
+2022, 16, ₹1000000, -72.97%
+2022, 17, ₹3200000, 220.00%
+2022, 18, ₹20000, -99.38%
+
+9. Percentage change in wholesale business between each week.
+Year, Week, Wholesale Sales, Percentage of Change
+2021, 25, ₹400000, None%
+2021, 36, ₹600000, 50.00%
+2022, 5, ₹4000000, 566.67%
+2022, 7, ₹200000, -95.00%
+2022, 9, ₹4000000, 1900.00%
+2022, 13, ₹700000, -82.50%
+2022, 14, ₹3700000, 428.57%
+2022, 16, ₹1000000, -72.97%
+2022, 17, ₹3200000, 220.00%
+2022, 18, ₹20000, -99.38%
+
+10. The date when we did the lowest business.
+The Date we did the lowest business is 2022-05-04 with ₹20000
