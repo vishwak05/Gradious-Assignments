@@ -1,0 +1,50 @@
+Write Python code using the DuckDB library to perform the required tasks.
+Submit the Python script file along with any necessary instructions for running the code.
+Ensure that the code is well-commented and organized.
+
+Note: You may use any additional libraries as needed.
+
+Submission Instructions:
+Python script (.py file) containing code to perform the tasks mentioned above using DuckDB and Python.
+A report (.txt or .pdf) summarizing your findings, including insights on transaction patterns and any interesting observations made during the analysis.
+
+ASSN1901
+
+1. Analyzing Customer Transactions with DuckDB and Python
+
+2. You are tasked with using DuckDB alongside Python to perform data analysis on a dataset named transactions.csv, 
+containing information about customer transactions.
+
+3. Your objective is to apply SQL queries to conduct various data filtering, aggregation, and sorting operations, 
+followed by an analysis of transaction patterns.
+
+Dataset Description: Link
+
+File Name: transactions.csv
+Columns:
+    customer_id: Unique identifier for each customer.
+    amount: The amount spent in each transaction.
+    transaction_date: The date of each transaction.
+
+Tasks:
+1. Filter Records for the Year 2023:
+    Write a SQL query to filter records for transactions that occurred in the year 2023.
+
+2. Calculate Total Amount Spent per Customer:
+    Aggregate the transactions to calculate the total amount spent by each customer.
+
+3. Sort Results by Total Spending:
+    Sort the results from task 2 by total spending in descending order.
+
+4. Calculate Average Spending per Customer for Each Month in 2023:
+    Write a SQL query to calculate the average spending per customer for each month in the year 2023.
+
+5. Identify Customers with Highest and Lowest Total Spending:
+    Determine the customer with the highest total spending and the customer with the lowest total spending.
+
+Instructions:
+    Load the transactions.csv dataset into DuckDB using Python.
+    Write SQL queries to perform each task mentioned above.
+    Execute the queries using DuckDB's SQL interface in Python.
+    Document your code with comments to explain each step and the purpose of each SQL query.
+    Analyze the results obtained from each task and provide insights based on the transaction patterns observed.

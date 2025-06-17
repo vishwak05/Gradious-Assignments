@@ -1,0 +1,10 @@
+1. Create a table for a domain object in your MySQL database
+2. Write (CRUD) methods in Python to insert, update, delete and select domain object(entity)
+
+Domain objects and their properties are specified in the below table. 
+You will be assigned a specific entity. 
+You need to write CRUD methods in Python for your domain object.
+
+Assignment ID: ASGN1701
+Table Name: Books
+Attributes: id, title, author, genre, publication_year, language, price, isbn, publisher, rating

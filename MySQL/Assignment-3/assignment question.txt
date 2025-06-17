@@ -1,0 +1,20 @@
+1. Write a query to retrieve the product details for order 10103.
+2. Write a query to get the customer information for order 10127
+3. Write a query to retrieve the employee information for customer 166
+4. Write a query to get the official information for office code 4
+5. Write a query to retrieve the product line for each product in an order.
+6. Write a query to get the customer information and order status for all orders that contain products belonging to the 'Classic Cars' product line.
+7. Write a query to retrieve the payment details and customer details of customer number 103
+8. Write a query to get the orders and their corresponding payments to the same customer.
+9. Write a query to retrieve the customers and their associated orders.
+10. Write a query to get the products and their corresponding product lines.
+11. Write a query to retrieve the employees and their respective managers.
+12. Write a query to retrieve the customers, their orders, and the corresponding product details.
+13. Write a query to get the payment details, order details, and the associated products.
+14. Write a query to retrieve the payment details and the customer information for the check number JM555205
+15. Write a query to retrieve the orders and their corresponding customer and employee information for a canceled status.
+16. Write a query to get the payments, order details, and associated product information for the pavment date 2004-12-17.
+17. Write a query to retrieve the products, order details, and corresponding customer information for customer 112
+18. Write a query to retrieve the customers, their orders, and the associated product line information for the customers who are all from Boston,
+19. Write a query to get the employees, their respective managers, and the corresponding office details of the Sales Rep.
+20. Write a query to retrieve the product lines, products, and the corresponding customer information for Vintage Cars.

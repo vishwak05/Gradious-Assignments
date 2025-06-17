@@ -1,0 +1,10 @@
+1. Write the query to get only the product Code and product name from the products table.
+2. Write the query to arrange the customer details based on the country name in descending order.
+3. Write the query to find the order number, order date, and status for the customers having comments about shipment.
+4. Write the query to find the customer who has made the highest payment along with the payment date.
+5. I have a list of the top five customers who made the highest payment and write a query to find the next top five customers who made the highest payment.
+6. Write the query to find the customer details whose credit limit is between 10,000 to 1,00,000.
+7. Write the query to get the Employee number, lastname, and first name from the employees' table whose last name starts with 'B'.
+8. write a query to select the order whose total amount is greater than 50,000.
+9. Write the query to find the productcode, product name & text description from the tables products and product lines.
+10. Write the query to get the customer number, customer name, order number, status from the tables order, payments, and customers who have no order.

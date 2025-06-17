@@ -1,0 +1,27 @@
+Write Python code using the pandasql library to perform the required tasks.
+Submit the Python script file along with any necessary instructions for running the code.
+Ensure that the code is well-commented and organized.
+
+Note: You may use any additional libraries as needed.
+
+ASSN1801
+
+Analyzing Customer Transactions using Pandas SQL
+You are provided with a dataset named transactions.csv, containing information about customer transactions.
+Your task is to perform various analyses on this dataset using the Pandas SQL interface.
+
+You are required to write Python code to achieve the following tasks:
+    1. Filter records for the year 2023.
+    2. Calculate the total amount spent per customer.
+    3. Return results sorted by total spending in descending order.
+    4. Calculate the average spending per customer for each month in the year 2023.
+    5. Identify the customer with the highest total spending and the customer with the lowest total spending.
+
+Dataset Description: Link
+
+File Name: transactions.csv
+
+Columns:
+    customer_id: Unique identifier for each customer.
+    amount: The amount spent in each transaction.
+    transaction_date: The date of each transaction.

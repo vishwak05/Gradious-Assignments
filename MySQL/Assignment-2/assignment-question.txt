@@ -1,0 +1,20 @@
+1. Write a query to calculate the total number of products in the database.
+2. Write a query to find the average buy price of all products.
+3. Write a query to determine the maximum quantity in stock across all products.
+4. Write a query to calculate the total sales revenue for each product line.
+5. Write a query to determine the average credit limit for all customers.
+6. Write a query to find the highest payment amount made by a customer.
+7. Write a query to calculate the total quantity ordered for each product.
+8. Write a query to determine the number of employees in each office.
+9. Write a query to calculate the average price for each order.
+10. Write a query to determine the total sales revenue for each country.
+11. Write a query to calculate the average quantity in stock for each product line.
+12. Write a query to determine the total number of orders placed by each customer.
+13. Write a query to find the maximum credit limit among all customers.
+14. Write a query to count the number of offices in each country.
+15. Write a query to calculate the average payment amount for each customer.
+16. Write a query to determine the number of products in each product line.
+17. Write a query to count the number of customers in each state.
+18. Write a query to find the minimum payment amount among all customers.
+19. Write a query to calculate the average sales revenue per order.
+20. Write a query to determine the total quantity ordered for each product line.
