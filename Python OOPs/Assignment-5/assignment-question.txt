@@ -1,0 +1,14 @@
+Refer the attached LRU Cache implementation. Use this as reference and implement your own LRU cache.
+
+Write code to count words in a file.
+
+count_words(fully_qualified_filepath).
+
+Decorate it with your own LRU cache with size of 3. Your cache should cache the file name and word count. If you call your function with the same file name, it should get it from cache.
+count_words("a.txt") => number of words
+count_words("b.txt") => number of words
+count_words("a.txt") => number of words // get from cache
+count_words("c.txt") => number of words
+count_words("d.txt") => number of words // b should be removed from cache
+
+LRU cache Implementation in Python

@@ -1,0 +1,18 @@
+ID: ASGN0801
+Task: Implementing Bank Account Abstract Base Class
+
+Assignment Description:
+Please follow the given instructions and the requirements and complete the following assignment.
+ID: ASGN0806
+Task: Abstract Base Class for Medical Services
+
+Assignment Description:
+Develop an abstract base class called Medical Service representing medical services provided by a healthcare facility.
+Implement this abstract base class with concrete subclasses representing different types of services (e.g., Consultation, Procedure).
+Each subclass should provide methods for scheduling appointments, recording patient data, and generating medical reports.
+
+Requirements:
+Define an abstract base class MedicalService with abstract methods for scheduling appointments, recording patient data, and generating medical reports.
+Implement concrete subclasses representing different types of services, each providing implementations for the abstract methods.
+Write unit tests to verify the functionality of appointment scheduling, patient data recording, and medical report generation for each type of service.
+Provide documentation explaining the purpose and usage of the abstract base class in the healthcare domain.

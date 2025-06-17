@@ -1,0 +1,14 @@
+Please follow the given instructions and the requirements and complete the following assignment.
+ID: ASGN0701
+Task: Implementing a Transaction Protocol
+
+Assignment Description:
+Design a custom protocol called Transaction that represents objects capable of performing financial transactions. 
+Implement this protocol across multiple classes representing different types of transactions (e.g., Deposit, Withdrawal, Transfer). 
+Each class should provide methods for executing the transaction and updating account balances.
+
+Requirements:
+Implement the Transaction protocol across multiple classes representing different types of financial transactions.
+Demonstrate how objects of different transaction classes can be used interchangeably in a banking application.
+Write unit tests to verify that transaction objects conform to the Transaction protocol and produce the correct results.
+Provide documentation explaining the benefits and limitations of using duck typing in the banking domain.

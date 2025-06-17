@@ -1,0 +1,14 @@
+Assignment-4
+
+ID: ASGN1006
+
+1.  Define two mixins:
+    a.  AppointmentMixin for managing appointments.
+        Add two methods schedule_appointment (self, appointment), cancel_appointment (self, appointment_id)
+    b.  PatientMixin for managing patients.
+        Add two methods add_patient(self, patient), remove_patient(self, patient_id)
+2.  Define HealthcareSystem class class that inherits from both mixins. This class combines the functionality of both mixins.
+
+3.  Create Appointment and Patient classes to represent appointments and patients.
+
+4.  Demonstrate the usage of the HealthcareSystem by scheduling appointments, adding patients, canceling appointments, removing a patient and then printing the appointments and patient details.

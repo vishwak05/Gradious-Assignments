@@ -1,0 +1,19 @@
+ID: ASGN0906
+Patient Record Management System
+
+1. Create Patient class with patient_id, name, age, medical_conditions as attributes. 
+medical_conditions should be tuple
+
+Patient detail tuple can contain deficiency, allergy, family medical history type in string.
+
+Example: 
+medical_conditions1 = ("BP", Diabetes")
+medical_conditions2 = ("Migraine")
+medical_conditions2 = ("Vitamin B12 Deficiency", "Asthma")
+
+2. Create PatientRecord with Patient as attribute which should be a list of Patient class
+    a. add_patient_record(self, patient)
+    b. update_patient_medical_info(self, patient_id, new_medical_conditions)
+    c. generate_patient_reports(self) should generate and return the patient reports
+
+3. write test methods to demonstrate all the functionalities.
