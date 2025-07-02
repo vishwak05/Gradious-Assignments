@@ -1,0 +1,14 @@
+Assignment 1 - Data Cleaning and Preprocessing
+
+Given a dataset from a real-world domain perform below data cleaning operations based on the guidelines given in "Data Preprocessing" document.
+
+1. Remove duplicates
+2. Handle missing values
+    - Column Removal
+    - Imputation
+3. Handle Outliers
+4. Perform data transformation
+    - Scaling numerical features
+    - Encoding Categorical variables
+
+Write a short summary of the steps taken for the data cleaning operation.
