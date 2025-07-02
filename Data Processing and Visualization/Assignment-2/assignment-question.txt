@@ -1,0 +1,10 @@
+Do all the data preprocessing steps that we have learnt:
+
+1. Data loading
+2. data cleaning
+3. handling NULL Values
+4. Creating / doing one-hot encoding
+5. Feature engineering
+6. Handling outliers
+7. Creating few charts which tells us about the data. Like which features are important w.r.t target variable, etc.
+8. Feature Reduction - zero variance and high correlation
