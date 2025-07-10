@@ -1,0 +1,25 @@
+ID: ASGN2302
+
+Insurance Premium Prediction:
+
+Dataset: Features include policyholder age, gender, health metrics, smoking status, coverage type, previous claims, annual income, and geographical location.
+
+Objective: 
+    Build a regression model to predict insurance premiums based on the provided features. 
+    The goal is to estimate insurance costs accurately, helping insurance companies set fair and competitive premiums.
+
+dataset: https://www.kaggle.com/datasets/schran/insurance-premium-prediction/
+
+ID: ASGN2301
+
+Customer Lifetime Value Prediction
+
+Dataset: Customer transaction data with information on purchase history and customer interactions.
+
+Objective: Build a regression model to predict the lifetime value of a customer based on their historical behaviour.
+
+dataset: https://www.kaggle.com/datasets/carrie1/ecommerce-data/
+
+or
+
+https://archive.ics.uci.edu/dataset/502/online+retail+ii
