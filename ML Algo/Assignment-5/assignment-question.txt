@@ -1,0 +1,20 @@
+ID: ASGN2702
+Anomaly Detection in Manufacturing Process Data
+
+Objective: Use Isolation Forest to detect anomalies in manufacturing process data.
+Dataset: Manufacturing Process Data for Predictive Maintenance
+
+Tasks:
+    1. Preprocess the data to handle missing values and normalize features.
+    2. Train an Isolation Forest model to detect anomalies in the manufacturing process.
+    3. Evaluate the model's performance using appropriate metrics.
+    4. Visualize the results to show normal vs. anomalous data points in the process.
+    5. Discuss potential causes of anomalies and recommend actions for process improvement.
+
+Submission Guidelines/Deliverables:
+    A Jupyter notebook containing:
+        - Code for data preprocessing, model training, and evaluation.
+        - Comments and explanations for each step.
+        - Visualizations of the results.
+    A PDF report summarizing the approach, findings, and recommendations for process improvement.
+    A README file with instructions on how to run the notebook and any dependencies required.
