@@ -1,0 +1,62 @@
+Arm skipped the NPU hype, making the CPU great at AI instead
+
+In the race to accelerate AI on everyday devices, the industry has long relied on two workhorses: GPUs, with their raw parallel power, and NPUs (Neural Processing Units), designed for specialized neural network tasks. Both come with flaws, though. GPUs have a latency and power overhead for short, spiky workloads (like a voice assistant processing a quick query, or an AI-powered device search), and NPUs, while efficient, are fragmented across vendors and force developers to account for a lot of different hardware. That's why I find Arm's alternative option intriguing, and honestly, outright better than a pure NPU reliance.
+
+I attended Arm's briefing in Cambridge to learn about the company's upcoming Lumex platform, its compute platform aimed at mobile. We were provided a technical walkthrough, breaking down the improvements seen in the C1 Ultra, C1 Premium, C1 Pro, and C1 Nano cores, along with an introduction to the new Mali G1 Ultra GPU. When questioned on the lack of NPU, Arm made it clear that it had no current interest in joining that race in consumer platforms, though that's not to say that the company is anti-NPU.
+
+The truth is that, on many platforms, AI often targets the CPU. That NPU fragmentation we mentioned, well, that's certainly part of the problem, but the other problem is that on-device AI is just easier to develop for CPU execution while still being generally good enough for decent results. Arm's lack of NPU interest doesn't mean that it's going to ignore on-device AI, though. In fact, the answer is quite the opposite, with Arm seemingly forging an alternative path for developers when it comes to on-device AI. Enter SME2.
+
+SME2 is an Arm extension supported by these new processors, and while Arm's Lumex platform is mobile-focused, it was also talked about in the context of laptop or even desktop computing several times, which would be Arm's Niva platform. The last presentation, focused on software, ended with a slide that said "Ecosystem is ready across all mobile platforms," superimposed over Apple, Windows, and Android logos side by side.
+
+SME2 is extremely interesting, and its capabilities are impressive. It's the next step towards the company's vision of running AI workloads on CPUs. SME2 isn't a replacement for an NPU; it's a complement.
+
+What is SME2?
+A CPU pipeline for local AI workloads
+Arm's answer to the NPU hype was to skip it entirely, instead focusing on improving AI targeted at the CPU and letting companies build their own NPUs if and when they need them. Instead, Arm focused on improving the Armv9-A Scalable Matrix Extension that it launched in 2021, following it up with SME2 in 2022.
+
+Having said that, until 2024, there were no consumer CPUs that exposed SME; Apple was the first, with SME2 finding its way to Apple's M4 series as a replacement for the proprietary and undocumented AMX instruction set. Writing code for AMX required using Apple's CoreML library (or scouring resources compiled by independent developers to use it) and letting the system decide where to run it, whereas SME is baked into the compiler.
+
+As an interesting aside for context, Apple never supported Scalable Vector Extensions (SVE), and the comments for LLVM specifically relating to Apple's M4 suggest that the core still doesn't support it. The abnormal way Apple handles SVE actually causes quite a few issues, sometimes. With M4, only the SME streaming subset is available. However, all of this means that we already see (and can use) SME2 outside of the smartphone space. If you're a registered Apple developer, you can find more details on how to use SME2 in the Apple Silicon CPU Optimization Guide.
+
+With that context out of the way, SME2 builds on the original SME by introducing a streaming SVE mode and a large ZA matrix accumulator that instructions can feed with outer-product operations. SME2 then layers on the following:
+
+Multi-vector ops: To operate on groups of Z registers in one go
+Multi-vector predication: To mask multiple vectors together
+Range prefetch: Software-directed prefetch over an address range to hide DRAM latency
+2-bit/4-bit weight compression: Low-precision model weights (INT2/INT4) can be read, compressed, and expanded on the fly, including with structured sparsity patterns to skip work
+
+Practically, all of this means you can run a lot of inference-time linear algebra directly on the CPU with high utilization and low latency, without bouncing out to a separate NPU block, or waiting on the GPU. Larger AI workloads (local LLMs, for example) will still likely run better on the GPU in the long run, but for something that requires a response in mere seconds, then the CPU will be a significantly better option for executing those local AI workloads. Plus, avoiding spinning up the GPU saves power, too.
+
+SME2 requires a computational unit that becomes a part of the processing pipeline, and each core cluster can have up to two units. In a Q&A session, I was told that companies building an Arm-based SoC can use multiple clusters of Arm cores with the ability to include two SME2 units per cluster, though this requires a multithreaded AI workload. Admittedly, if you're getting into multithreaded AI like that, you're probably better off targeting the GPU instead. And Arm knows this.
+
+Because most AI workloads will likely be single-threaded in nature, the performance uplift figures that the company shared (which we'll talk about soon) are measured when only using one SME2 unit. Theoretically, that performance uplift can linearly scale across multiple units, but that requires a careful implementation from a developer to get it right. Apple's hardware implementation has two SME2 units, with a unit for the P-core cluster and a unit for the E-core cluster.
+
+Better performance, no fragmentation
+Practically every NPU is different
+
+When it comes to NPUs, the problem is often fragmentation. Deploying a tool that uses an on-device NPU requires targeting that specific NPU, and while many of these companies have their own SDKs that you can target, it requires developing platform-specific implementations. SME2 not only offers a way to standardize many of the workloads that might have previously been designated to an NPU, but it's also abstracted entirely thanks to Kleidi AI.
+
+Kleidi AI is Arm's way of being able to "develop once, test once, deploy everywhere," supporting NEON, SVE2, and SME2. The Kleidi libraries themselves are mostly written in assembly with simple C/C++ calls to utilize the library, and these handle the execution for you. Tools like ONNX, PyTorch, OpenCV, and more can all use Kleidi AI (or Kleidi CV in the case of OpenCV), meaning they can all use SME2. Arm even has a "learning path" to help developers get acquainted, with one example using Whisper and an AWS instance with Graviton 4, which packs Arm Neoverse v2 cores. Neoverse v2 only supports SVE, but making use of it requires very little work, as PyTorch handles the processor-specific parts via Kleidi. The same goes for SME2.
+
+If you want to use SME2, you can try it out on bare metal if you have an iPhone 16, iPad Pro 7th Generation, 2024 iMac, 2024 Mac Mini, a 2024 MacBook Pro with an M4 Pro or M4 Max, or a 2025 MacBook Air. I compiled Arm's test applications on my M4 Pro MacBook Pro, and the samples worked with very little effort. All you need to ensure is that you have a recent installation of Clang.
+
+
+All of this culminates in a very clear benefit: massive performance improvements. Here are some of the numbers that Arm shared, again keeping in mind that just one SME2 unit is used:
+
+Tool, Purpose, Speed improvement, Measured, C1-Pro, C1-Pro with SME2
+Whisper, Speech recognition, 4.7x, Latency, 1495ms, 315ms
+Gemma3, LLM encode, 4.7x, Tokens per second, 84, 398
+Stable Audio, Audio generation, 2.8x, Generation time, 27s, 9.7s
+
+Coupled with the other performance improvements of Arm's new C1 cores, and the improvements that were measured in Apple's SME2 implementation when compared to AMX, it's hard not to get excited about SME2. Arm tells me that the 25% uplift in single-threaded performance of the C1-Ultra, for example, is only partially influenced by SME2 support. There's a bump from 3.6 GHz to 4.1 GHz in there too, but we're still looking at double-digit IPC gains and improved power efficiency. That means a faster and more efficient CPU alongside massive AI performance improvements.
+
+It gets better, though, as SME2 is designed to complement an NPU rather than replace it. There are still reasons companies using Arm CPUs will want to have an NPU, and Apple is, again, a prime example of it. SME2 may have replaced AMX, but Apple's Neural Engine still exists. What SME2 does is shrink the set of cases where an NPU is needed, improving both performance and ease-of-use for developers who target CPU execution above all else. Developers have an easier time, and device owners see significantly quicker local AI workloads.
+
+Arm's new Lumex platform is extremely exciting
+And Apple's implementation proves it
+TLDW whisper model transcription
+I'm incredibly excited about everything Arm showed off here. The new C1 cores look really good, and paired with SME2, they offer some incredible potential performance improvements. Plus, tools like Whisper enable local speech-to-text generation, which actually has privacy benefits, too.
+
+Imagine if you could query your phone out loud and have it process your voice locally before sending text to the cloud? These are the kinds of use cases Arm envisions; it's an additional privacy barrier, and it saves the voice provider money thanks to the reduced bandwidth and reduced processing required. And if a device doesn't have SME2, a fallback option can be in place.
+
+In a sense, it feels like the gap between the CPU, the GPU, and the NPU has closed just a little bit with SME2. Especially given that what we know isn't just theoretical, and Apple's own implementation appears to have some big performance improvements over its own AMX. The CPU is an important part of on-device AI, and this is a great way to make it a whole lot better.

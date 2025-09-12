@@ -1,0 +1,44 @@
+At the age of 12 I experienced a second wonder of a totally different nature:
+in a little book dealing with Euclidean plane geometry, which came into my
+hands at the beginning of a schoolyear.  
+Here were assertions, as for
+example the intersection of the three altitudes of a triangle in one point,
+which --- though by no means evident --- could nevertheless be proved with
+such certainty that any doubt appeared to be out of the question.  This lucidity and certainty made an indescribable impression
+upon me.  That the axiom had to be accepted unproved did 
+not disturb me.  In any case it was
+quite sufficient for me if I could peg proofs upon propositions
+the validity of which did not seem to me to be
+dubious.  
+For example I remember that an uncle 
+told me the Pythagorean theorem before the 
+holy geometry booklet had come into my hands.  
+After much effort I succeeded
+in ``proving'' this theorem on the 
+basis of the similarity of triangles; in doing so it seemed to me
+``evident'' that the relations 
+of the sides of the right-angled triangles
+would have to be determined by
+one of the acute
+angles.  Only something which did not in
+similar fashion seem to be ``evident'' 
+appeared to me to be in need of any proof at all.
+
+... for anyone who experiences it for the first time, it is marvellous
+enough that man is capable at all to reach such a degree
+of certainty and purity in pure thinking as the
+Greeks showed us for the first time to be
+possible in geometry.
+
+
+Albert Einstein:
+Philosopher-Scientist
+
+New York, Tudor Publishing Company, 1949 (first edition)
+and 1951 (second)
+
+edited by Paul Arthur Schilpp
+translated by Paul Arthur Schilpp
+
+
+pp. 9--11
